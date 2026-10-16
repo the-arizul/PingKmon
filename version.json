@@ -1,8 +1,8 @@
 {
-  "version": "2.0.4",
-  "name": "v2.0.4 Stable",
-  "notes": "### Release Notes\n\n* **Target Editing**: Modify host display name, IP address/hostname, category tags, and accent colors directly from monitor cards or toolbar.\n* **Pinned Hero Cards**: Pin key targets to top as full-width horizontal cards with wide realtime sparkline graphs.\n* **Dynamic Gateway Resolution**: Zero CPU Win32 network listener instantly updates local gateway IP on Wi-Fi, Ethernet, or VPN adapter switches.\n* **Package Manager Sync**: Updated Chocolatey and WinGet manifests with verified installer SHA256 checksums.\n* **Automated Startup Updates**: PingKmon checks for new software releases seamlessly on launch with rich Markdown changelogs.",
-  "pub_date": "2026-09-02T09:40:00Z",
-  "downloadUrl": "https://github.com/Arizul-Islam/PingKmon/releases/download/v2.0.4/PingKmon_2.0.4_x64-setup.exe",
-  "releaseUrl": "https://github.com/Arizul-Islam/PingKmon/releases/tag/v2.0.4"
+  "version": "2.0.6",
+  "name": "v2.0.6 Stable",
+  "notes": "### Release Notes\n\n* **Zero-Lag Canvas Rendering**: Integrated Min-Max screen decimation algorithms and O(log N) binary search crosshairs, eliminating all lag and frame drops during long monitoring sessions.\n* **Unlimited Network History**: Removed the 5-minute data restriction across timeline and detail views, supporting full 24-hour continuous ICMP retention without performance degradation.\n* **Offline Launch Resilience**: Optimized font loading in WebView2 to prevent startup blocking when operating without an active internet connection.\n* **Single-Pass Gradient & Overlap Optimization**: Cached canvas gradients and merged overlapping sub-pixel packet-loss bars for smooth 60 FPS rendering under heavy packet loss.",
+  "downloadUrl": "https://github.com/Arizul-Islam/PingKmon/releases/download/v2.0.6/PingKmon_2.0.6_x64-setup.exe",
+  "releaseUrl": "https://github.com/Arizul-Islam/PingKmon/releases/tag/v2.0.6",
+  "pub_date": "2026-10-15T23:54:53Z"
 }

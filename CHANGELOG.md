@@ -1,5 +1,15 @@
 # PingKmon Changelog
 
+## v2.0.6 - Zero-Lag Canvas Decimation & Offline Launch (2026-10-16)
+
+### 🚀 Major Highlights
+- **Zero-Lag Canvas Decimation Engine**: Implemented Min-Max bucket aggregation and adaptive coordinate mapping in `PingCanvasChart.tsx` and `TimelineCanvasChart.tsx`. Decimates arbitrary sample counts down to screen pixels, eliminating all render lag and frame drops during extended monitoring.
+- **Unlimited Continuous Network History**: Removed the 5-minute data restriction across timeline and detail views. Extended local and memory retention to 24 hours (86,400 samples/host) without memory or rendering bottlenecks.
+- **Offline Launch Resilience**: Optimized WebView2 Google Fonts loader in `index.html` to load non-blocking with local system fallbacks, enabling instant offline app launch without internet connection stalls.
+- **Single-Pass Rendering & O(log N) Inspection**: Cached canvas gradients outside render loops, merged sub-pixel packet-loss bars, and converted crosshair/hover detection to binary search.
+
+---
+
 ## v2.0.4 - Nearest Speed Test Engine & Single Monitor Performance (2026-09-02)
 
 ### 🚀 Major Highlights
