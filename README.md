@@ -5,19 +5,19 @@
 # PingKmon
 **Native Windows Network Latency and Multi-Host Diagnostic Software**
 
-[![Platform](https://img.shields.io/badge/Platform-Windows%2010%20%7C%2011-0078D6?style=for-the-badge&logo=windows&logoColor=white)](https://github.com/Arizul-Islam/PingKmon/releases)
-[![Release](https://img.shields.io/github/v/release/Arizul-Islam/PingKmon?style=for-the-badge&color=22c55e&logo=github)](https://github.com/Arizul-Islam/PingKmon/releases/latest)
+[![Platform](https://img.shields.io/badge/Platform-Windows%2010%20%7C%2011-0078D6?style=for-the-badge&logo=windows&logoColor=white)](https://github.com/the-arizul/PingKmon/releases)
+[![Release](https://img.shields.io/github/v/release/the-arizul/PingKmon?style=for-the-badge&color=22c55e&logo=github)](https://github.com/the-arizul/PingKmon/releases/latest)
 [![Tauri](https://img.shields.io/badge/Tauri-2.0-blue?style=for-the-badge&logo=tauri&logoColor=white)](https://tauri.app)
 [![Rust](https://img.shields.io/badge/Rust-2021-orange?style=for-the-badge&logo=rust&logoColor=white)](https://www.rust-lang.org)
 [![WinGet](https://img.shields.io/badge/WinGet-Available-0078D4?style=for-the-badge&logo=windows-terminal&logoColor=white)](https://github.com/microsoft/winget-pkgs/pull/426471)
 [![Chocolatey](https://img.shields.io/badge/Chocolatey-Package-80B5EA?style=for-the-badge&logo=chocolatey&logoColor=white)](https://community.chocolatey.org/packages/pingkmon)
-[![License](https://img.shields.io/badge/License-Freeware-0284c7?style=for-the-badge)](https://github.com/Arizul-Islam/PingKmon)
+[![License](https://img.shields.io/badge/License-Freeware-0284c7?style=for-the-badge)](https://github.com/the-arizul/PingKmon)
 
 <br/>
 
 <p align="center">
-  <a href="https://github.com/Arizul-Islam/PingKmon/releases/download/v2.0.6/PingKmon_2.0.6_x64-setup.exe">
-    <img src="https://img.shields.io/badge/DOWNLOAD_FOR_WINDOWS_(x64)-00C853?style=for-the-badge&logo=windows&logoColor=white" height="44" alt="Download PingKmon v2.0.6" />
+  <a href="https://github.com/the-arizul/PingKmon/releases/download/v2.0.7/PingKmon_2.0.7_x64-setup.exe">
+    <img src="https://img.shields.io/badge/DOWNLOAD_FOR_WINDOWS_(x64)-00C853?style=for-the-badge&logo=windows&logoColor=white" height="44" alt="Download PingKmon v2.0.7" />
   </a>
 </p>
 
@@ -111,7 +111,7 @@ PingKmon is an ultra-fast, high-performance network diagnostic and latency monit
 ## Feedback and Issue Reports
 
 Encountered an issue or have a feature suggestion?  
-Submit an issue on the [Issue Tracker](https://github.com/Arizul-Islam/PingKmon/issues).
+Submit an issue on the [Issue Tracker](https://github.com/the-arizul/PingKmon/issues).
 
 ---
 
@@ -123,12 +123,12 @@ Submit an issue on the [Issue Tracker](https://github.com/Arizul-Islam/PingKmon/
 ## License and Copyright
 
 PingKmon is released as **Freeware**.  
-All rights reserved &copy; 2026 **[ARIZUL](https://github.com/Arizul-Islam)**.
+All rights reserved &copy; 2026 **[ARIZUL](https://github.com/the-arizul/)**.
 
 Permission is granted to download, install, and use PingKmon for personal, educational, and commercial diagnostic purposes.
 
 ---
 
 <div align="center">
-  <sub>Developed by <a href="https://github.com/Arizul-Islam"><b>ARIZUL</b></a></sub>
+  <sub>Developed by <a href="https://github.com/the-arizul/"><b>ARIZUL</b></a></sub>
 </div>

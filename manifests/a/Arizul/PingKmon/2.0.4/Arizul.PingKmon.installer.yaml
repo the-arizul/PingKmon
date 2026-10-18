@@ -14,7 +14,7 @@ UpgradeBehavior: install
 ReleaseDate: 2026-09-02
 Installers:
   - Architecture: x64
-    InstallerUrl: https://github.com/Arizul-Islam/PingKmon/releases/download/v2.0.4/PingKmon_2.0.4_x64-setup.exe
+    InstallerUrl: https://github.com/the-arizul/PingKmon/releases/download/v2.0.4/PingKmon_2.0.4_x64-setup.exe
     InstallerSha256: EDB8DC73418425B9F8FA5EF0F728EBD32CF4710C20FFE6B5DF6819D5F8F77370
 ManifestType: installer
 ManifestVersion: 1.6.0

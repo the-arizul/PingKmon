@@ -24,4 +24,4 @@ PingKmon performs network communications strictly to fulfill user-initiated oper
 PingKmon does not share data with any third-party marketing or analytics services.
 
 ## 5. Contact
-If you have questions regarding this Privacy Policy, please open an inquiry on our [Issue Tracker](https://github.com/Arizul-Islam/PingKmon/issues).
+If you have questions regarding this Privacy Policy, please open an inquiry on our [Issue Tracker](https://github.com/the-arizul/PingKmon/issues).

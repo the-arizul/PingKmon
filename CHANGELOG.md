@@ -1,5 +1,15 @@
 # PingKmon Changelog
 
+## v2.0.7 - Rounded Graph Design & Ambient Latency Colors (2026-10-18)
+
+### Major Highlights
+- **Rounded Graph Design**: Framed the network latency graph with smooth rounded corners and clean borders, perfectly matching the app cards and visual dashboard design.
+- **Ambient Latency Color Range**: Added a soft background color gradient that gently transitions from healthy green to warning tones as connection response times change, keeping your charts clean and easy to read without harsh lines.
+- **Redesigned Speed Test Gauge**: Re-engineered the speedometer with a widescreen panoramic arc, clearer centered speed readouts, and complete historical test graphs.
+- **Streamlined Controls & Tooltips**: Simplified time window filters and removed native popovers during graph inspection for a distraction-free experience.
+
+---
+
 ## v2.0.6 - Zero-Lag Canvas Decimation & Offline Launch (2026-10-16)
 
 ### 🚀 Major Highlights

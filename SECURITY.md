@@ -15,7 +15,7 @@ The following table lists the currently supported versions of PingKmon:
 
 Security and integrity are top priorities for PingKmon. If you discover a security vulnerability or security-related issue:
 
-1. Please report it privately through GitHub Security Advisories or by creating an issue labeled `security` on our [GitHub Issue Tracker](https://github.com/Arizul-Islam/PingKmon/issues).
+1. Please report it privately through GitHub Security Advisories or by creating an issue labeled `security` on our [GitHub Issue Tracker](https://github.com/the-arizul/PingKmon/issues).
 2. Include detailed steps to reproduce the issue, along with relevant environment details (Windows version, network configuration).
 3. We will acknowledge receipt of your report within 48 hours and work on a fix in an expedited release.
 
@@ -23,7 +23,7 @@ Security and integrity are top priorities for PingKmon. If you discover a securi
 
 ## Binary Integrity & Verification
 
-Official release binaries are hosted exclusively on the [official GitHub Releases page](https://github.com/Arizul-Islam/PingKmon/releases). 
+Official release binaries are hosted exclusively on the [official GitHub Releases page](https://github.com/the-arizul/PingKmon/releases). 
 
 Each release includes an official SHA-256 checksum that you can verify in PowerShell:
 ```powershell
