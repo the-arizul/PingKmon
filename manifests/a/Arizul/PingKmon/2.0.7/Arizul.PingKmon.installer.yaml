@@ -15,6 +15,6 @@ ReleaseDate: 2026-10-18
 Installers:
   - Architecture: x64
     InstallerUrl: https://github.com/the-arizul/PingKmon/releases/download/v2.0.7/PingKmon_2.0.7_x64-setup.exe
-    InstallerSha256: 1D3F5F14EF503C55B26C4881EBF48B096CBE88EF9551BC8F924F21295D1F2F8B
+    InstallerSha256: DA37FE6A830A4EB885E32D7C9E019C90B12011A09B5C498293D756A0C7F83483
 ManifestType: installer
 ManifestVersion: 1.6.0
