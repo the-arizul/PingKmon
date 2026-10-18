@@ -5,7 +5,7 @@ The installer has been downloaded directly from the official GitHub Release of P
 
 Release Page: https://github.com/the-arizul/PingKmon/releases/tag/v2.0.7
 Download URL: https://github.com/the-arizul/PingKmon/releases/download/v2.0.7/PingKmon_2.0.7_x64-setup.exe
-SHA256 Checksum: 9721EDF9E6F2C3D2EAD88E62FDB0595E69D5F057551F1EC600EA6999E4184819
+SHA256 Checksum: 1D3F5F14EF503C55B26C4881EBF48B096CBE88EF9551BC8F924F21295D1F2F8B
 
 To verify the checksum manually in PowerShell:
 Get-FileHash -Path PingKmon_2.0.7_x64-setup.exe -Algorithm SHA256
