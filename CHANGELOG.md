@@ -7,6 +7,7 @@
 - **Overview of Every Target**: A new Overview page lists all your targets with a small graph, typical and worst response times and current status. It opens first, so you see everything at a glance.
 - **Quick Actions Everywhere**: Right-click any target in the list or on the Overview to ping it, pause it, mute its alerts, pin it, trace its route, copy its address, edit it or remove it. The same choices are in each target page menu.
 - **Lighter, Tidier Windows**: Adding a target, editing, confirming and the About panel now open as small panels right where you clicked, instead of covering the whole window.
+- **Guided Tour**: The first time you open this version, a short tour shows you around the app and helps you turn on Start with Windows, so PingKmon is always watching your connection.
 - **Exports You Can Find**: Exported files are saved straight to your Downloads folder, and a short message shows the exact location with a button to open the folder.
 
 ### Improvements & Fixes
