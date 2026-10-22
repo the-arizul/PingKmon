@@ -1,8 +1,8 @@
 {
-  "version": "2.1.2",
-  "name": "v2.1.2 Stable",
-  "notes": "### Improvements & Fixes\n\n- **Accurate Charts When Changing Range**: Switching to a shorter period no longer shows a brief, misleading line before the real data appears. A short loading message shows instead, and periods with no pings say so clearly.\n- **Clicking the Chart Keeps It Live**: A simple click on the chart no longer jumps out of the live view. Only dragging moves back in time, and dragging the seven-day view stays live because it already shows everything.\n- **Faster Long Views**: The longer views now load their history once instead of over and over, so they feel lighter and smoother.\n- **Tidier Outage List**: The list of outages under a chart now ends with a little breathing room instead of touching the bottom of the window.\n- **Clearer Update Check**: In the About panel, the result of an update check now appears as a short label on the button instead of a squeezed sentence.",
-  "downloadUrl": "https://github.com/the-arizul/PingKmon/releases/download/v2.1.2/PingKmon_2.1.2_x64-setup.exe",
-  "releaseUrl": "https://github.com/the-arizul/PingKmon/releases/tag/v2.1.2",
-  "pub_date": "2026-10-22T06:28:05Z"
+  "version": "2.1.3",
+  "name": "v2.1.3 Stable",
+  "notes": "### Improvements & Fixes\n\n- **Clearer Update Window**: Updates now open in a centered window with the install button always in view.\n- **Easier to Read Notes**: What is new in each update is shown as a clean list that scrolls on its own.\n- **One Click to Open**: Clicking the tray icon now simply opens PingKmon. Right-click it for the menu.",
+  "downloadUrl": "https://github.com/the-arizul/PingKmon/releases/download/v2.1.3/PingKmon_2.1.3_x64-setup.exe",
+  "releaseUrl": "https://github.com/the-arizul/PingKmon/releases/tag/v2.1.3",
+  "pub_date": "2026-10-22T06:36:48Z"
 }

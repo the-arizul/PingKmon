@@ -1,5 +1,15 @@
 # PingKmon Changelog
 
+## v2.1.3 - Clearer Update Window & One-Click Tray (2026-10-22)
+
+### Improvements & Fixes
+
+- **Clearer Update Window**: Updates now open in a centered window with the install button always in view.
+- **Easier to Read Notes**: What is new in each update is shown as a clean list that scrolls on its own.
+- **One Click to Open**: Clicking the tray icon now simply opens PingKmon. Right-click it for the menu.
+
+---
+
 ## v2.1.2 - Accurate Charts & Small Fixes (2026-10-22)
 
 ### Improvements & Fixes
