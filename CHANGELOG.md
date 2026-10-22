@@ -1,5 +1,29 @@
 # PingKmon Changelog
 
+## v2.1.1 - Overview Page, Quick Actions & Tidier Windows (2026-10-22)
+
+### Major Highlights
+
+- **Overview of Every Target**: A new Overview page lists all your targets with a small graph, typical and worst response times and current status. It opens first, so you see everything at a glance.
+- **Quick Actions Everywhere**: Right-click any target in the list or on the Overview to ping it, pause it, mute its alerts, pin it, trace its route, copy its address, edit it or remove it. The same choices are in each target page menu.
+- **Lighter, Tidier Windows**: Adding a target, editing, confirming and the About panel now open as small panels right where you clicked, instead of covering the whole window.
+- **Exports You Can Find**: Exported files are saved straight to your Downloads folder, and a short message shows the exact location with a button to open the folder.
+
+### Improvements & Fixes
+
+- **Smaller Window**: PingKmon now opens in a compact size that fits next to your other apps, and every page is arranged to fit it.
+- **Silent Updates**: Installing an update no longer flashes a command window. PingKmon closes, updates and reopens on its own.
+- **Feels Like an App**: Text boxes no longer show suggestion lists from your browser, and browser menus and zoom shortcuts no longer appear inside the window.
+- **Fixed a Freeze After Removing a Target**: The window could stop responding to clicks after confirming a removal. It now keeps working normally.
+- **Clearer History View**: When you look back in time, the target page shows the time span under its name and a single Back to live button, and the top of the page no longer jumps onto two lines.
+- **Roomier Charts**: Each target chart now fills its whole panel, with the response time scale tucked inside, so you see more of the line and less empty space.
+- **Comparison Chart Polish**: The comparison chart has rounded corners like the others, even scale steps, and time labels that no longer crowd each other.
+- **Accurate Status Colors**: A target that is not responding now shows red on its own page too, and empty readings are no longer colored.
+- **Smoother Switches**: The sliding selector in tabs and time ranges moves cleanly instead of jumping in from the side.
+- **Easier to Scroll**: The target list fades at its edges when there are more targets than fit, so you know you can scroll.
+
+---
+
 ## v2.1.0 - Background Monitoring, Seven Days of History & New Layout (2026-10-22)
 
 ### Major Highlights
