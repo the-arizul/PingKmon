@@ -16,8 +16,8 @@
 <br/>
 
 <p align="center">
-  <a href="https://github.com/the-arizul/PingKmon/releases/download/v2.0.7/PingKmon_2.0.7_x64-setup.exe">
-    <img src="https://img.shields.io/badge/DOWNLOAD_FOR_WINDOWS_(x64)-00C853?style=for-the-badge&logo=windows&logoColor=white" height="44" alt="Download PingKmon v2.0.7" />
+  <a href="https://github.com/the-arizul/PingKmon/releases/download/v2.1.0/PingKmon_2.1.0_x64-setup.exe">
+    <img src="https://img.shields.io/badge/DOWNLOAD_FOR_WINDOWS_(x64)-00C853?style=for-the-badge&logo=windows&logoColor=white" height="44" alt="Download PingKmon v2.1.0" />
   </a>
 </p>
 
@@ -43,35 +43,38 @@ choco install pingkmon
 
 ## Overview
 
-PingKmon is an ultra-fast, high-performance network diagnostic and latency monitoring tool built specifically for Windows powered by **Tauri 2.0** and a **native Rust ICMP engine**. Whether diagnosing packet loss spikes, troubleshooting routing bottlenecks, or verifying connection stability, PingKmon delivers real-time telemetry with an extremely low system resource footprint (**~15-30 MB RAM**, **< 0.5% CPU**).
+PingKmon is an ultra-fast, high-performance network diagnostic and latency monitoring tool built specifically for Windows powered by **Tauri 2.0** and a **native Rust ICMP engine**. Whether diagnosing packet loss spikes, troubleshooting routing bottlenecks, or verifying connection stability, PingKmon keeps monitoring around the clock: closed to the tray it uses only a few megabytes of memory, and it keeps seven days of history for every target.
 
 ---
 
 ## Key Features
 
-* **Native Rust ICMP Engine**  
-  Direct Windows `iphlpapi.dll` socket execution delivering true native ICMP pinging with sub-millisecond precision and zero simulated data.
+* **Native Rust ICMP Engine**
+  Direct Windows `iphlpapi.dll` pinging with sub-millisecond precision and no simulated data.
 
-* **Multi-Host Concurrent Monitoring**  
-  Track latency, jitter, and packet loss across multiple servers, DNS endpoints, and local gateways simultaneously in real time.
+* **Always-On Background Monitoring**
+  Monitoring, history and alerts run in the native engine, so closing the window to the tray keeps everything running in just a few megabytes of memory.
 
-* **PingPlotter-Style Loss & Gap Visualization**  
-  Full-height red vertical loss indicators that highlight packet drops clearly without compressing latency curves, plus shaded gray gap blocks for sleep/disconnect periods.
+* **Seven Days of History**
+  Every target keeps a week of history. Pan and zoom from seven days down to seconds, with a week overview strip under each chart and outages grouped with their duration.
 
-* **High-Frequency Visual Timelines**  
-  Smooth interactive HTML5 canvas charts with monotone spline interpolation and configurable sampling rates (`0.2s`, `0.5s`, `1s`, `2s`, `5s`).
+* **Sidebar and Focus Layout**
+  All targets stay visible in the sidebar with their live response time; the selected target gets one clear chart with its key numbers.
 
-* **Visual Traceroute and Path Diagnostics**  
-  Hop-by-hop route analysis identifying peering bottlenecks, ISP routing issues, and intermediate node packet drops.
+* **Compare All Targets**
+  Overlay every target on one timeline across the same seven days, with configurable sampling rates (`0.2s`, `0.5s`, `1s`, `2s`, `5s`).
 
-* **Integrated Multi-Server Speed Test**  
-  Multi-threaded Tokio HTTP throughput tester measuring download speed, upload speed, bufferbloat, and loaded latency directly inside the app.
+* **Live Trace Route**
+  Hop-by-hop route analysis that fills in as each hop answers, without opening a console window.
 
-* **Per-Host Acoustic & Threshold Alarms**  
-  Configurable audio synthesizer alerts and visual banners triggered when latency exceeds custom thresholds or connection outages occur.
+* **Integrated Multi-Server Speed Test**
+  Measures download speed, upload speed, ping and connection quality directly inside the app, with a history of past tests.
 
-* **Native Windows & Tray Integration**  
-  System tray background minimization, configurable auto-start on Windows boot, and automatic background memory trimming.
+* **Alerts in the Tray**
+  Sound alerts for slow replies and outages that keep working while the window is closed, with per-target mute.
+
+* **Native Windows Integration**
+  System tray, optional start with Windows, and a single lightweight installer.
 
 ---
 

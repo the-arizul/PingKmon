@@ -1,5 +1,27 @@
 # PingKmon Changelog
 
+## v2.1.0 - Background Monitoring, Seven Days of History & New Layout (2026-10-22)
+
+### Major Highlights
+
+- **Keeps Watching in the Background**: Closing the window no longer stops monitoring. PingKmon keeps checking your connection from the tray while using only a few megabytes of memory.
+- **Seven Days of History**: Look back over the last week for every target. Scroll to any day and zoom from a full week down to a few seconds.
+- **Brand New Layout**: Your targets are always listed on the left with their live response time, and the one you pick fills the window with a single clear chart.
+- **Week at a Glance**: A slim overview under each chart shows the whole week, so rough patches stand out and you can jump straight to them.
+- **Alerts That Keep Working**: Sound alerts now play even while the window is closed, and you can mute any single target from its menu.
+
+### Improvements & Fixes
+
+- **Smoother Charts**: Long views scroll, zoom and respond instantly, with a calm line and a soft band that shows how much each moment varied.
+- **Clearer Outage Summary**: Dropped replies are grouped into outages with how long each one lasted, instead of a long list of separate times.
+- **Cleaner Speed Test**: A simpler page with one clear start button, four easy results and a tidy list of past tests.
+- **Live Trace Route**: Each step of the route appears as soon as it answers, no command window pops up anymore, and you can stop a trace at any time.
+- **Compare All Targets**: The timeline is now called Compare all, with the same week of history and simple buttons to show or hide each target.
+- **Simpler Settings**: Settings are grouped into short, readable sections, with options to clear history or reset PingKmon.
+- **Small Touches**: Very fast replies now read as under one millisecond instead of zero, and outage times show the day when they are not from today.
+
+---
+
 ## v2.0.7 - Rounded Graph Design & Ambient Latency Colors (2026-10-18)
 
 ### Major Highlights
