@@ -1,6 +1,6 @@
 # Privacy Policy for PingKmon
 
-Last updated: September 1, 2026
+Last updated: October 22, 2026
 
 PingKmon is designed with a strict **privacy-first** architecture. We believe that diagnostic network software should serve the user without silently collecting private information.
 
@@ -23,5 +23,11 @@ PingKmon performs network communications strictly to fulfill user-initiated oper
 ## 4. Third-Party Services
 PingKmon does not share data with any third-party marketing or analytics services.
 
-## 5. Contact
+## 5. PingKmon Pro Early-Access Form
+* The PingKmon app itself still collects nothing. The "Get notified" buttons in the app only open the PingKmon website in your browser.
+* If you choose to fill in the optional early-access form on the website, your email address and answers are collected by [Tally](https://tally.so), the form provider, and shared with the PingKmon developer.
+* Your email is used only to tell you when PingKmon Pro is ready. It is never sold or shared with anyone else, and you will not be added to any other mailing list.
+* To have your email removed, open an inquiry on the [Issue Tracker](https://github.com/the-arizul/PingKmon/issues) or reply to the email you receive.
+
+## 6. Contact
 If you have questions regarding this Privacy Policy, please open an inquiry on our [Issue Tracker](https://github.com/the-arizul/PingKmon/issues).
