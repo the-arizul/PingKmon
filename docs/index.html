@@ -1,0 +1,235 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>PingKmon</title>
+<meta name="description" content="PingKmon watches your internet connection on Windows: live latency for every target, seven days of history, speed test and trace route. Free.">
+<meta property="og:title" content="PingKmon">
+<meta property="og:description" content="Watch your connection. Prove every outage. Free network latency monitor for Windows.">
+<meta property="og:image" content="https://the-arizul.github.io/PingKmon/assets/overview.png">
+<link rel="icon" href="assets/logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #070a11; --bg-2: #0d1118; --card: #11151d; --border: rgba(255,255,255,0.08);
+    --text: #f4f6f8; --muted: #9aa3af; --faint: #6b7280;
+    --primary: #34d399; --primary-ink: #04130d;
+    --excellent: #10b981; --good: #06b6d4; --fair: #f59e0b; --poor: #f97316; --critical: #ef4444;
+    --shadow: 0 30px 80px -30px rgba(0,0,0,0.8);
+  }
+  @media (prefers-color-scheme: light) {
+    :root:not([data-theme="dark"]) {
+      --bg: #f8fafc; --bg-2: #eef2f6; --card: #ffffff; --border: rgba(15,23,42,0.1);
+      --text: #0f172a; --muted: #475569; --faint: #64748b;
+      --primary: #059669; --primary-ink: #ffffff; --shadow: 0 30px 70px -35px rgba(15,23,42,0.35);
+    }
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body { margin: 0; background: var(--bg); color: var(--text); font: 16px/1.6 'IBM Plex Sans', system-ui, sans-serif; -webkit-font-smoothing: antialiased; }
+  a { color: inherit; text-decoration: none; }
+  .mono { font-family: 'JetBrains Mono', ui-monospace, monospace; }
+  .wrap { max-width: 1080px; margin: 0 auto; padding: 0 20px; }
+  .glow { position: absolute; inset: 0 0 auto 0; height: 560px; pointer-events: none; background: radial-gradient(60% 60% at 50% 0%, rgba(52,211,153,0.16), transparent 70%); }
+
+  nav { position: sticky; top: 0; z-index: 10; backdrop-filter: blur(10px); background: color-mix(in srgb, var(--bg) 80%, transparent); border-bottom: 1px solid var(--border); }
+  nav .wrap { display: flex; align-items: center; justify-content: space-between; height: 60px; }
+  .brand { display: flex; align-items: center; gap: 10px; font-weight: 700; letter-spacing: -0.01em; }
+  .brand img { width: 26px; height: 26px; border-radius: 7px; }
+  .brand b { color: var(--primary); font-weight: 700; }
+  .links { display: flex; gap: 22px; font-size: 14px; color: var(--muted); }
+  .links a:hover { color: var(--text); }
+
+  .btn { display: inline-flex; align-items: center; justify-content: center; gap: 8px; height: 44px; padding: 0 20px; border-radius: 10px; font-weight: 600; font-size: 15px; border: 1px solid transparent; cursor: pointer; transition: transform .15s, background .15s, border-color .15s; }
+  .btn:active { transform: translateY(1px); }
+  .btn-primary { background: var(--primary); color: var(--primary-ink); }
+  .btn-primary:hover { filter: brightness(1.06); }
+  .btn-ghost { border-color: var(--border); color: var(--text); background: var(--card); }
+  .btn-ghost:hover { border-color: color-mix(in srgb, var(--primary) 45%, var(--border)); }
+  .btn-sm { height: 36px; padding: 0 14px; font-size: 14px; }
+
+  header.hero { position: relative; overflow: hidden; padding: 72px 0 40px; text-align: center; }
+  .pill { display: inline-flex; align-items: center; gap: 8px; padding: 5px 12px; border-radius: 999px; border: 1px solid var(--border); background: var(--card); color: var(--muted); font-size: 13px; }
+  .dot { width: 7px; height: 7px; border-radius: 50%; background: var(--excellent); box-shadow: 0 0 0 4px color-mix(in srgb, var(--excellent) 22%, transparent); }
+  h1 { font-size: clamp(34px, 6vw, 58px); line-height: 1.08; letter-spacing: -0.03em; margin: 22px auto 16px; max-width: 760px; }
+  h1 span { color: var(--primary); }
+  .lead { color: var(--muted); font-size: clamp(16px, 2.2vw, 19px); max-width: 620px; margin: 0 auto 30px; }
+  .cta { display: flex; flex-wrap: wrap; gap: 12px; justify-content: center; }
+  .sub { margin-top: 14px; font-size: 13px; color: var(--faint); }
+  .sub code { color: var(--muted); }
+  .shot { margin: 48px auto 0; max-width: 1000px; border-radius: 16px; border: 1px solid var(--border); overflow: hidden; box-shadow: var(--shadow); background: var(--card); }
+  .shot img { display: block; width: 100%; height: auto; }
+
+  section { padding: 76px 0; scroll-margin-top: 40px; }
+  .eyebrow { color: var(--primary); font-size: 13px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; }
+  h2 { font-size: clamp(26px, 4vw, 38px); letter-spacing: -0.02em; line-height: 1.15; margin: 10px 0 14px; }
+  .section-lead { color: var(--muted); max-width: 640px; margin: 0 0 36px; }
+  .grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+  .card { background: var(--card); border: 1px solid var(--border); border-radius: 14px; padding: 22px; }
+  .card h3 { margin: 12px 0 6px; font-size: 16px; }
+  .card p { margin: 0; color: var(--muted); font-size: 14.5px; }
+  .ico { width: 36px; height: 36px; border-radius: 10px; display: grid; place-items: center; background: color-mix(in srgb, var(--primary) 14%, transparent); color: var(--primary); }
+  .ico svg { width: 18px; height: 18px; }
+  .scale { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 26px; }
+  .scale span { font-size: 12.5px; padding: 4px 10px; border-radius: 999px; border: 1px solid var(--border); color: var(--muted); }
+  .scale i { display: inline-block; width: 8px; height: 8px; border-radius: 50%; margin-right: 6px; vertical-align: 0; }
+
+  .split { display: grid; grid-template-columns: 1.1fr 1fr; gap: 40px; align-items: center; }
+  .split .shot { margin: 0; }
+
+  .pro { position: relative; border: 1px solid color-mix(in srgb, var(--primary) 30%, var(--border)); border-radius: 20px; padding: 44px; background: linear-gradient(135deg, color-mix(in srgb, var(--primary) 9%, var(--card)), var(--card) 60%); }
+  .badge { display: inline-block; font-size: 12px; font-weight: 600; padding: 3px 10px; border-radius: 999px; color: var(--excellent); background: color-mix(in srgb, var(--excellent) 13%, transparent); border: 1px solid color-mix(in srgb, var(--excellent) 30%, transparent); margin-left: 10px; vertical-align: middle; }
+  .pro ul { list-style: none; padding: 0; margin: 0 0 28px; display: grid; gap: 14px; }
+  .pro li { display: flex; gap: 12px; align-items: flex-start; }
+  .pro li strong { display: block; }
+  .pro li span { color: var(--muted); font-size: 14.5px; }
+  .free-note { margin-top: 14px; font-size: 13.5px; color: var(--faint); }
+
+  .survey { text-align: center; }
+  .survey .section-lead { margin: 0 auto 26px; }
+  .chips { display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; margin-bottom: 28px; }
+  .chips span { padding: 8px 14px; border-radius: 10px; background: var(--card); border: 1px solid var(--border); font-size: 14px; color: var(--muted); }
+
+  footer { border-top: 1px solid var(--border); padding: 30px 0 40px; color: var(--faint); font-size: 14px; }
+  footer .wrap { display: flex; flex-wrap: wrap; gap: 14px; justify-content: space-between; }
+  footer a:hover { color: var(--text); }
+
+  @media (max-width: 860px) {
+    .grid { grid-template-columns: 1fr 1fr; }
+    .split { grid-template-columns: 1fr; }
+    .pro { padding: 28px 22px; }
+  }
+  @media (max-width: 560px) {
+    .wrap { padding: 0 16px; }
+    .links a:not(.keep) { display: none; }
+    .grid { grid-template-columns: 1fr; }
+    header.hero { padding-top: 52px; }
+    .cta .btn { width: 100%; }
+  }
+</style>
+</head>
+<body>
+<nav>
+  <div class="wrap">
+    <a class="brand" href="#"><img src="assets/logo.png" alt=""><span>Ping<b>Kmon</b></span></a>
+    <div class="links">
+      <a href="#features">Features</a>
+      <a href="#pro" class="keep">Pro</a>
+      <a href="https://github.com/the-arizul/PingKmon/releases/latest">Download</a>
+    </div>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="glow"></div>
+  <div class="wrap" style="position:relative">
+    <span class="pill"><span class="dot"></span>Free for Windows 10 and 11</span>
+    <h1>Watch your connection.<br><span>Prove every outage.</span></h1>
+    <p class="lead">PingKmon keeps an eye on the websites, servers and devices you care about, shows how fast each one answers, and remembers every drop for a week.</p>
+    <div class="cta">
+      <a class="btn btn-primary" href="https://github.com/the-arizul/PingKmon/releases/latest">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12M7 10l5 5 5-5M5 21h14"/></svg>
+        Download for Windows
+      </a>
+      <a class="btn btn-ghost" href="#pro">PingKmon Pro is coming</a>
+    </div>
+    <p class="sub">Or with Chocolatey: <code class="mono">choco install pingkmon</code></p>
+    <div class="shot"><img src="assets/overview.png" width="1036" height="600" alt="PingKmon Overview showing five targets with small graphs and their response times"></div>
+  </div>
+</header>
+
+<section id="features">
+  <div class="wrap">
+    <div class="eyebrow">Free, today</div>
+    <h2>Everything you need to know your internet is really working</h2>
+    <p class="section-lead">No account, no ads, and your monitoring data never leaves your PC. PingKmon runs on your machine and keeps watching from the tray with only a few megabytes of memory.</p>
+    <div class="grid">
+      <div class="card"><div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12h4l3-8 4 16 3-8h4"/></svg></div><h3>Live response times</h3><p>Every target is checked every second, with a clear color for great, good, slow and down.</p></div>
+      <div class="card"><div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12a9 9 0 1 0 3-6.7L3 8"/><path d="M3 3v5h5M12 7v5l3 2"/></svg></div><h3>A week of history</h3><p>Scroll back seven days, zoom from a whole week down to seconds, and see every outage and how long it lasted.</p></div>
+      <div class="card"><div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8a6 6 0 0 0-12 0c0 7-3 9-3 9h18s-3-2-3-9M13.7 21a2 2 0 0 1-3.4 0"/></svg></div><h3>Alerts in the background</h3><p>A short tone when a target slows down or stops answering, even while the window is closed.</p></div>
+      <div class="card"><div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 14l4-4M3.3 19a10 10 0 1 1 17.4 0"/></svg></div><h3>Speed test</h3><p>Measure download and upload speed to local exchange servers or international ones, and keep a list of past results.</p></div>
+      <div class="card"><div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="6" cy="19" r="2"/><circle cx="18" cy="5" r="2"/><path d="M8 19h7a3.5 3.5 0 0 0 0-7H9a3.5 3.5 0 0 1 0-7h7"/></svg></div><h3>Trace route</h3><p>See every step between you and a target, and exactly where the delay starts.</p></div>
+      <div class="card"><div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="M7 15l4-4 3 3 5-6"/></svg></div><h3>Compare everything</h3><p>Put all your targets on one chart to tell a slow website apart from a slow connection.</p></div>
+    </div>
+    <div class="scale">
+      <span><i style="background:var(--excellent)"></i>Under 30 ms</span>
+      <span><i style="background:var(--good)"></i>30 to 80 ms</span>
+      <span><i style="background:var(--fair)"></i>80 to 150 ms</span>
+      <span><i style="background:var(--poor)"></i>150 to 300 ms</span>
+      <span><i style="background:var(--critical)"></i>Lost replies</span>
+    </div>
+  </div>
+</section>
+
+<section style="padding-top:20px">
+  <div class="wrap split">
+    <div class="shot"><img src="assets/target.png" width="1036" height="600" alt="A target page with a 24 hour chart, its outages and a seven day overview strip" loading="lazy"></div>
+    <div>
+      <div class="eyebrow">See the whole story</div>
+      <h2>Every drop, every slow hour, in one calm chart</h2>
+      <p class="section-lead" style="margin-bottom:0">Pick a range from one minute to seven days, drag back in time, and use the strip below the chart to jump straight to the rough patches.</p>
+    </div>
+  </div>
+</section>
+
+<section id="pro">
+  <div class="wrap">
+    <div class="pro">
+      <div class="eyebrow">Coming soon</div>
+      <h2>PingKmon Pro<span class="badge">Soon</span></h2>
+      <p class="section-lead">For people who need to know about outages even when they are away from their PC, and who want proof to show their internet provider.</p>
+      <ul>
+        <li><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="2" width="12" height="20" rx="2"/><path d="M11 18h2"/></svg></span><div><strong>Alerts on your phone</strong><span>A notification when a target goes down, and another when it is back, through a free phone app, Telegram or Discord.</span></div></li>
+        <li><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M8 13h8M8 17h5"/></svg></span><div><strong>Outage reports for your provider</strong><span>A clear PDF with every outage, how long it lasted and your speed against your plan, ready to send with a complaint.</span></div></li>
+        <li><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg></span><div><strong>90 days of history</strong><span>Look back three months instead of one week, for every target.</span></div></li>
+      </ul>
+      <a class="btn btn-primary" data-form href="#">Get notified</a>
+      <p class="free-note">Everything PingKmon does today stays free.</p>
+    </div>
+  </div>
+</section>
+
+<section id="survey" class="survey" style="padding-top:20px">
+  <div class="wrap">
+    <div class="eyebrow">Help shape Pro</div>
+    <h2>Which of these would you pay for?</h2>
+    <p class="section-lead">One short form, under a minute. Leave your email to hear when Pro is ready.</p>
+    <div class="chips">
+      <span>Phone alerts</span><span>Outage reports</span><span>Longer history</span><span>Several PCs on one dashboard</span><span>Monitoring from outside</span>
+    </div>
+    <a class="btn btn-ghost" data-form href="#">Take the 1-minute survey</a>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <span>&copy; <span id="year"></span> ARIZUL &middot; PingKmon is freeware</span>
+    <span style="display:flex;gap:18px">
+      <a href="https://github.com/the-arizul/PingKmon">GitHub</a>
+      <a href="https://github.com/the-arizul/PingKmon/blob/main/PRIVACY.md">Privacy</a>
+      <a href="https://github.com/the-arizul/PingKmon/releases">All releases</a>
+    </span>
+  </div>
+</footer>
+
+<script>
+  // Paste the Tally or Google Form link here. Until then the buttons say "Coming soon".
+  const FORM_URL = '';
+
+  document.getElementById('year').textContent = new Date().getFullYear();
+  document.querySelectorAll('[data-form]').forEach((a) => {
+    if (FORM_URL) {
+      a.href = FORM_URL;
+      a.target = '_blank';
+      a.rel = 'noopener';
+    } else {
+      a.textContent = 'Sign-ups open soon';
+      a.href = 'https://github.com/the-arizul/PingKmon/releases';
+    }
+  });
+</script>
+</body>
+</html>
