@@ -16,10 +16,12 @@
 <br/>
 
 <p align="center">
-  <a href="https://github.com/the-arizul/PingKmon/releases/download/v2.1.3/PingKmon_2.1.3_x64-setup.exe">
-    <img src="https://img.shields.io/badge/DOWNLOAD_FOR_WINDOWS_(x64)-00C853?style=for-the-badge&logo=windows&logoColor=white" height="44" alt="Download PingKmon v2.1.3" />
+  <a href="https://github.com/the-arizul/PingKmon/releases/download/v2.1.4/PingKmon_2.1.4_x64-setup.exe">
+    <img src="https://img.shields.io/badge/DOWNLOAD_FOR_WINDOWS_(x64)-00C853?style=for-the-badge&logo=windows&logoColor=white" height="44" alt="Download PingKmon v2.1.4" />
   </a>
 </p>
+
+<p align="center"><a href="https://the-arizul.github.io/PingKmon/">Website</a> &nbsp;·&nbsp; <a href="https://the-arizul.github.io/PingKmon/#pro">PingKmon Pro is coming: get notified</a></p>
 
 </div>
 

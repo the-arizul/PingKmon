@@ -1,5 +1,14 @@
 # PingKmon Changelog
 
+## v2.1.4 - PingKmon Pro Preview & Big-Screen Layouts (2026-10-22)
+
+### Improvements & Fixes
+
+- **PingKmon Pro Is Coming**: Settings now shows what PingKmon Pro will add, with a quick way to get notified. Everything you use today stays free.
+- **Looks Great on Big Screens**: Pages now use the whole window when you maximize PingKmon, and the Overview list stays neat at any size.
+
+---
+
 ## v2.1.3 - Clearer Update Window & One-Click Tray (2026-10-22)
 
 ### Improvements & Fixes

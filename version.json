@@ -1,8 +1,8 @@
 {
-  "version": "2.1.3",
-  "name": "v2.1.3 Stable",
-  "notes": "### Improvements & Fixes\n\n- **Clearer Update Window**: Updates now open in a centered window with the install button always in view.\n- **Easier to Read Notes**: What is new in each update is shown as a clean list that scrolls on its own.\n- **One Click to Open**: Clicking the tray icon now simply opens PingKmon. Right-click it for the menu.",
-  "downloadUrl": "https://github.com/the-arizul/PingKmon/releases/download/v2.1.3/PingKmon_2.1.3_x64-setup.exe",
-  "releaseUrl": "https://github.com/the-arizul/PingKmon/releases/tag/v2.1.3",
-  "pub_date": "2026-10-22T06:36:48Z"
+  "version": "2.1.4",
+  "name": "v2.1.4 Stable",
+  "notes": "### Improvements & Fixes\n\n- **PingKmon Pro Is Coming**: Settings now shows what PingKmon Pro will add, with a quick way to get notified. Everything you use today stays free.\n- **Looks Great on Big Screens**: Pages now use the whole window when you maximize PingKmon, and the Overview list stays neat at any size.",
+  "downloadUrl": "https://github.com/the-arizul/PingKmon/releases/download/v2.1.4/PingKmon_2.1.4_x64-setup.exe",
+  "releaseUrl": "https://github.com/the-arizul/PingKmon/releases/tag/v2.1.4",
+  "pub_date": "2026-10-22T07:48:13Z"
 }
