@@ -3,11 +3,11 @@ $ErrorActionPreference = 'Stop'
 $packageArgs = @{
   packageName   = 'pingkmon'
   fileType      = 'EXE'
-  url           = 'https://github.com/the-arizul/PingKmon/releases/download/v2.1.4/PingKmon_2.1.4_x64-setup.exe'
+  url           = 'https://github.com/the-arizul/PingKmon/releases/download/v2.1.5/PingKmon_2.1.5_x64-setup.exe'
   silentArgs    = '/S'
   validExitCodes= @(0)
   softwareName  = 'PingKmon'
-  checksum      = 'DD8364AE234B9BD5492780E1E53EDB7469645ACA8F8095865DBCCD247927AB2A'
+  checksum      = '18F547449DA17FB4FDE11ED40D896915F5FB40703308C90A150DF438FAABCD4C'
   checksumType  = 'sha256'
 }
 

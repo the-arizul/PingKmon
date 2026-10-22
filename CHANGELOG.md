@@ -1,5 +1,18 @@
 # PingKmon Changelog
 
+## v2.1.5 - Speed Tests Anywhere & Nicer Compare All (2026-10-22)
+
+### Improvements & Fixes
+
+- **Speed Tests That Work Anywhere**: Choose Global to test against the fastest server outside your country, or Nearby to test against the closest server to you, wherever you live. Global is now the default, and the list of faraway servers was refreshed with locations on every continent.
+- **One Steady Speed Meter**: The speed meter now uses a single scale from start to finish, so the needle no longer jumps to a new scale halfway through a test.
+- **Better Looking Compare All**: The Compare all page now matches the look of each target page, with a clear row showing every target, its current reply time and its average.
+- **Keeps Your Place**: When you look back in time and then switch to another target or page, PingKmon remembers where you were. Press Esc to jump back to live.
+- **Neater Overview**: The extra space above each Overview row is gone.
+- **Calmer Back to Live Button**: The button that returns you to live readings now fits in with the rest of the page.
+
+---
+
 ## v2.1.4 - PingKmon Pro Preview & Big-Screen Layouts (2026-10-22)
 
 ### Improvements & Fixes

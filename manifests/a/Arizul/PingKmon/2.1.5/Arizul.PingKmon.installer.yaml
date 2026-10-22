@@ -1,0 +1,20 @@
+# Created with WinGet Manifest Creator
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.6.0.schema.json
+
+PackageIdentifier: Arizul.PingKmon
+PackageVersion: 2.1.5
+InstallerLocale: en-US
+MinimumOSVersion: 10.0.17763.0
+InstallerType: nullsoft
+Scope: user
+InstallModes:
+  - interactive
+  - silent
+UpgradeBehavior: install
+ReleaseDate: 2026-10-22
+Installers:
+  - Architecture: x64
+    InstallerUrl: https://github.com/the-arizul/PingKmon/releases/download/v2.1.5/PingKmon_2.1.5_x64-setup.exe
+    InstallerSha256: 18F547449DA17FB4FDE11ED40D896915F5FB40703308C90A150DF438FAABCD4C
+ManifestType: installer
+ManifestVersion: 1.6.0

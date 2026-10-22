@@ -1,8 +1,8 @@
 {
-  "version": "2.1.4",
-  "name": "v2.1.4 Stable",
-  "notes": "### Improvements & Fixes\n\n- **PingKmon Pro Is Coming**: Settings now shows what PingKmon Pro will add, with a quick way to get notified. Everything you use today stays free.\n- **Looks Great on Big Screens**: Pages now use the whole window when you maximize PingKmon, and the Overview list stays neat at any size.",
-  "downloadUrl": "https://github.com/the-arizul/PingKmon/releases/download/v2.1.4/PingKmon_2.1.4_x64-setup.exe",
-  "releaseUrl": "https://github.com/the-arizul/PingKmon/releases/tag/v2.1.4",
-  "pub_date": "2026-10-22T07:48:13Z"
+  "version": "2.1.5",
+  "name": "v2.1.5 Stable",
+  "notes": "### Improvements & Fixes\n\n- **Speed Tests That Work Anywhere**: Choose Global to test against the fastest server outside your country, or Nearby to test against the closest server to you, wherever you live. Global is now the default, and the list of faraway servers was refreshed with locations on every continent.\n- **One Steady Speed Meter**: The speed meter now uses a single scale from start to finish, so the needle no longer jumps to a new scale halfway through a test.\n- **Better Looking Compare All**: The Compare all page now matches the look of each target page, with a clear row showing every target, its current reply time and its average.\n- **Keeps Your Place**: When you look back in time and then switch to another target or page, PingKmon remembers where you were. Press Esc to jump back to live.\n- **Neater Overview**: The extra space above each Overview row is gone.\n- **Calmer Back to Live Button**: The button that returns you to live readings now fits in with the rest of the page.",
+  "downloadUrl": "https://github.com/the-arizul/PingKmon/releases/download/v2.1.5/PingKmon_2.1.5_x64-setup.exe",
+  "releaseUrl": "https://github.com/the-arizul/PingKmon/releases/tag/v2.1.5",
+  "pub_date": "2026-10-22T16:17:39Z"
 }
