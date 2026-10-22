@@ -7,7 +7,7 @@ $packageArgs = @{
   silentArgs    = '/S'
   validExitCodes= @(0)
   softwareName  = 'PingKmon'
-  checksum      = '4BD36B9B6ADAA7BED5B1825492F0EDD18BA2FBA0E92194CC433905C48F01508F'
+  checksum      = 'DEC61CF36BFC71A3D162C52AC4C79E7F7B46B91718A768026C52F589ED02C435'
   checksumType  = 'sha256'
 }
 

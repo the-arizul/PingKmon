@@ -20,6 +20,8 @@
 - **Roomier Charts**: Each target chart now fills its whole panel, with the response time scale tucked inside, so you see more of the line and less empty space.
 - **Comparison Chart Polish**: The comparison chart has rounded corners like the others, even scale steps, and time labels that no longer crowd each other.
 - **Accurate Status Colors**: A target that is not responding now shows red on its own page too, and empty readings are no longer colored.
+- **Neater Window Corners**: The window corners are smaller and cleaner, and on Windows 11 they are drawn by Windows itself for a perfectly smooth edge.
+- **Tidier About Panel**: The About panel is now a short, organized card with the version, update check, developer and license on separate lines.
 - **Smoother Switches**: The sliding selector in tabs and time ranges moves cleanly instead of jumping in from the side.
 - **Easier to Scroll**: The target list fades at its edges when there are more targets than fit, so you know you can scroll.
 
