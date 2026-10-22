@@ -1,5 +1,17 @@
 # PingKmon Changelog
 
+## v2.1.2 - Accurate Charts & Small Fixes (2026-10-22)
+
+### Improvements & Fixes
+
+- **Accurate Charts When Changing Range**: Switching to a shorter period no longer shows a brief, misleading line before the real data appears. A short loading message shows instead, and periods with no pings say so clearly.
+- **Clicking the Chart Keeps It Live**: A simple click on the chart no longer jumps out of the live view. Only dragging moves back in time, and dragging the seven-day view stays live because it already shows everything.
+- **Faster Long Views**: The longer views now load their history once instead of over and over, so they feel lighter and smoother.
+- **Tidier Outage List**: The list of outages under a chart now ends with a little breathing room instead of touching the bottom of the window.
+- **Clearer Update Check**: In the About panel, the result of an update check now appears as a short label on the button instead of a squeezed sentence.
+
+---
+
 ## v2.1.1 - Overview Page, Quick Actions & Tidier Windows (2026-10-22)
 
 ### Major Highlights

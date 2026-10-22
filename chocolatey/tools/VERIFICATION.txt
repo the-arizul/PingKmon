@@ -3,9 +3,9 @@ Verification is intended to assist the Chocolatey moderators and community in ve
 
 The installer has been downloaded directly from the official GitHub Release of PingKmon and verified with SHA256 checksum:
 
-Release Page: https://github.com/the-arizul/PingKmon/releases/tag/v2.1.1
-Download URL: https://github.com/the-arizul/PingKmon/releases/download/v2.1.1/PingKmon_2.1.1_x64-setup.exe
-SHA256 Checksum: DEC61CF36BFC71A3D162C52AC4C79E7F7B46B91718A768026C52F589ED02C435
+Release Page: https://github.com/the-arizul/PingKmon/releases/tag/v2.1.2
+Download URL: https://github.com/the-arizul/PingKmon/releases/download/v2.1.2/PingKmon_2.1.2_x64-setup.exe
+SHA256 Checksum: 9B2BE8DB92981C2F774E95EB9145EBE1AB1C6261CF71701655ABBD1D5C3DFB84
 
 To verify the checksum manually in PowerShell:
-Get-FileHash -Path PingKmon_2.1.1_x64-setup.exe -Algorithm SHA256
+Get-FileHash -Path PingKmon_2.1.2_x64-setup.exe -Algorithm SHA256
