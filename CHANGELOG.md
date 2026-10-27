@@ -1,5 +1,24 @@
 # PingKmon Changelog
 
+## v2.1.6 - Dependable Charts, Honest Speed Tests and Safer Updates (2026-10-27)
+
+### Improvements & Fixes
+
+- **Speed Test History Is Trustworthy**: A finished test now appears in the history list exactly once, with the full curve you watched on screen.
+- **Honest Results When a Server Is Unreachable**: If a server does not answer, the test now says so clearly instead of showing a fast, made-up reply.
+- **Click an Outage to See It**: Pick an outage in the list and the chart zooms in on exactly when it happened.
+- **Clearer Outage Lengths**: Durations now show every unit that applies — days, hours, minutes and seconds together — instead of stopping at the largest one.
+- **Simpler Target Setup**: The Group field is gone, so adding a new target is faster.
+- **Charts Show Only What Is True**: When a view covers no readings, the chart no longer draws data that is not there.
+- **Dependable Trace Routes**: A trace that runs out of steps is no longer mistaken for the destination, and replies from Windows are read correctly.
+- **Safer Updates**: The update button only downloads real installers, never web pages.
+- **Alerts Use Each Target's Own Settings**: A target with its own threshold shows its own number in the high-latency alert.
+- **History Stays Safe**: Clearing history or browsing an unusual time range no longer risks losing samples or stopping the app.
+- **Fresh Charts When You Change a Target**: Pointing a target at a new address starts its chart and statistics over cleanly.
+- **A Cleaner Look**: The last decorative sparkle icons are gone.
+
+# PingKmon Changelog
+
 ## v2.1.5 - Speed Tests Anywhere & Nicer Compare All (2026-10-22)
 
 ### Improvements & Fixes
